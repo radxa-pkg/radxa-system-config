@@ -1,3 +1,12 @@
+radxa-system-config (0.3.1) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Fix CI
+  * Remove pkg.conf from .gitignore
+  * Fix package content
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 17 Jul 2023 08:07:25 +0000
+
 radxa-system-config (0.3.0) stable; urgency=medium
 
   * Split from radxa-profiles
