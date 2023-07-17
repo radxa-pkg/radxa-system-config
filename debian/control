@@ -1,0 +1,32 @@
+Source: radxa-system-config
+Maintainer: "Radxa Computer Co., Ltd" <dev@radxa.com>
+Section: libs
+Priority: optional
+Standards-Version: 4.6.0
+Build-Depends: debhelper (>=12~),
+               devscripts,
+               lintian,
+               pandoc,
+
+Package: radxa-system-config-amlogic
+Architecture: all
+Priority: optional
+Depends: radxa-system-config-common,
+         ${misc:Depends},
+Description: Amlogic system config files
+ This package provides system config files for Amlogic devices.
+
+Package: radxa-system-config-common
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends},
+Description: Common system config files
+ This package provides common system config files.
+
+Package: radxa-system-config-rockchip
+Architecture: all
+Priority: optional
+Depends: radxa-system-config-common,
+         ${misc:Depends},
+Description: Rockchip system config files
+ This package provides system config files for Rockchip devices.
