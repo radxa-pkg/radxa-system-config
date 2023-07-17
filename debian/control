@@ -6,7 +6,6 @@ Standards-Version: 4.6.0
 Build-Depends: debhelper (>=12~),
                devscripts,
                lintian,
-               pandoc,
 
 Package: radxa-system-config-amlogic
 Architecture: all
