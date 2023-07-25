@@ -1,3 +1,10 @@
+radxa-system-config (0.3.4) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Add Rockchip Xfce configs
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 25 Jul 2023 10:22:42 +0000
+
 radxa-system-config (0.3.3) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
