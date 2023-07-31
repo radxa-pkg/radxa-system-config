@@ -1,3 +1,11 @@
+radxa-system-config (0.3.5) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Force enable HDMI-1 on Amlogic platform
+  * Disable effects that can cause incorrect rendering
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 31 Jul 2023 10:23:36 +0000
+
 radxa-system-config (0.3.4) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
