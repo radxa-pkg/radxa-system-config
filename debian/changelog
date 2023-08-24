@@ -1,3 +1,10 @@
+radxa-system-config (0.3.6) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Add default environment variables
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 24 Aug 2023 10:09:31 +0000
+
 radxa-system-config (0.3.5) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
