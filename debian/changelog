@@ -1,3 +1,10 @@
+radxa-system-config (0.3.7) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Move mpp setting to radxa-system-config-rk3399
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 24 Aug 2023 11:45:02 +0000
+
 radxa-system-config (0.3.6) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
