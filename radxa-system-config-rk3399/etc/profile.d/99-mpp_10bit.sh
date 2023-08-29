@@ -2,5 +2,5 @@
 
 # Following environment variables are needed for
 # gstreamer to decode 10-bit H.265 video
-echo "GST_MPP_NO_RGA=0"
-echo "GST_MPP_DEC_DISABLE_NV12_10=1"
+export GST_MPP_NO_RGA=0
+export GST_MPP_DEC_DISABLE_NV12_10=1
