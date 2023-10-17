@@ -30,7 +30,6 @@ Depends: radxa-system-config-common,
 Description: Rockchip system config files
  This package provides system config files for Rockchip devices.
 
-
 Package: radxa-system-config-rk3399
 Architecture: all
 Priority: optional
