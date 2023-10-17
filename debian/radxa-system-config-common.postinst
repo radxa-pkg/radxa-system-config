@@ -1,0 +1,23 @@
+#!/bin/sh
+set -e
+
+case $1 in
+    configure)
+        if [ ! -e /etc/default/zramswap ]
+        then
+            touch /etc/default/zramswap
+        fi
+        if ( source /etc/default/zramswap && [ -z "$ALGO" ] )
+        then
+            echo "ALGO=zstd" >> /etc/default/zramswap
+        fi
+        if ( source /etc/default/zramswap && [ -z "$PERCENT" ] )
+        then
+            echo "PERCENT=50" >> /etc/default/zramswap
+        fi
+        ;;
+esac
+    
+#DEBHELPER#
+
+exit 0
