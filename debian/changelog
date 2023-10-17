@@ -1,3 +1,15 @@
+radxa-system-config (0.3.11) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Fix docs file
+  * amlogic: set default sddm session to wayland
+  * Remove extra empty line
+  * common: rockchip: set default browser with mimeapps.list
+  * Delete improperly named conffile(s)
+  * Add SoC and common configs
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 17 Oct 2023 10:11:03 +0000
+
 radxa-system-config (0.3.10) jammy; urgency=medium
 
   [ dependabot[bot] ]
