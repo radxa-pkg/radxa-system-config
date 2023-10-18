@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+
+#DEBHELPER#
+
+case $1 in
+    remove)
+        conflicts="/usr/share/desktop-base/kf5-settings/kdeglobals"
+        for i in $conflicts
+        do
+            dpkg-divert --package radxa-system-config-bookworm --rename --remove "$i"
+        done
+        ;;
+esac
+
+exit 0
