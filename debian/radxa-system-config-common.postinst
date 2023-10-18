@@ -7,11 +7,11 @@ case $1 in
         then
             touch /etc/default/zramswap
         fi
-        if ( source /etc/default/zramswap && [ -z "$ALGO" ] )
+        if ( . /etc/default/zramswap && [ -z "$ALGO" ] )
         then
             echo "ALGO=zstd" >> /etc/default/zramswap
         fi
-        if ( source /etc/default/zramswap && [ -z "$PERCENT" ] )
+        if ( . /etc/default/zramswap && [ -z "$PERCENT" ] )
         then
             echo "PERCENT=50" >> /etc/default/zramswap
         fi
