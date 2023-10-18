@@ -5,7 +5,17 @@ case $1 in
     configure)
         if [ ! -e /var/lib/sddm/state.conf ]
         then
-            cp /usr/share/doc/radxa-system-config-amlogic/state.conf /var/lib/sddm/state.conf
+            mkdir -p /var/lib/sddm/
+            cat << EOF > /var/lib/sddm/state.conf
+[Last]
+# Name of the last logged-in user.
+# This user will be preselected when the login screen appears
+#User=radxa
+
+# Name of the session for the last logged-in user.
+# This session will be preselected when the login screen appears.
+Session=/usr/share/wayland-sessions/plasmawayland.desktop
+EOF
         fi
         ;;
 esac
