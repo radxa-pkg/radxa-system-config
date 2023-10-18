@@ -1,0 +1,9 @@
+radxa-system-config (0.4.0) jammy; urgency=medium
+
+  We have moved most of rbuild's config files into radxa-system-config. This is
+  done to provide finer-grained control of the configuration packages.
+
+  When you upgrade your system, you might see some config conflicts. This is
+  expected behaviour.
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 18 Oct 2023 17:42:12 +0800
