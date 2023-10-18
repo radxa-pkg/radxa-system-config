@@ -1,3 +1,10 @@
+radxa-system-config (0.4.1) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Fix radxa-system-config-bookworm file conflict
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 18 Oct 2023 11:35:51 +0000
+
 radxa-system-config (0.4.0) jammy; urgency=medium
 
   * Version bump due to addition of many /etc configs and new suite specific
