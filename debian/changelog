@@ -1,3 +1,10 @@
+radxa-system-config (0.3.13) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Fix more installation conflicts
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 18 Oct 2023 04:03:54 +0000
+
 radxa-system-config (0.3.12) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
