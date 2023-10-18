@@ -3,10 +3,10 @@ set -e
 
 case $1 in
     install|upgrade)
-        conflicts="kdeglobals"
+        conflicts="/usr/share/applications/mimeapps.list"
         for i in $conflicts
         do
-            dpkg-divert --package radxa-system-config-rockchip --divert "/usr/share/desktop-base/kf5-settings/$i.bak" --rename "/usr/share/desktop-base/kf5-settings/$i"
+            dpkg-divert --package radxa-system-config-rockchip --divert "$i.bak" --rename "$i"
         done
         ;;
 esac

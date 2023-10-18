@@ -37,3 +37,41 @@ Depends: radxa-system-config-rockchip,
          ${misc:Depends},
 Description: Rockchip system config files
  This package provides system config files for Rockchip RK3399 devices.
+
+Package: radxa-system-config-buster
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends},
+Description: Common system config files
+ This package provides Debian Buster system config files.
+ This is currently an empty package.
+
+Package: radxa-system-config-bullseye
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends},
+Description: Common system config files
+ This package provides Debian Bullseye system config files.
+
+Package: radxa-system-config-bookworm
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends},
+Description: Common system config files
+ This package provides Debian Bookworm system config files.
+
+Package: radxa-system-config-focal
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends},
+Description: Common system config files
+ This package provides Ubuntu Focal system config files.
+ This is currently an empty package.
+
+Package: radxa-system-config-jammy
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends},
+Description: Common system config files
+ This package provides Ubuntu Jammy system config files.
+ This is currently an empty package.
