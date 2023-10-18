@@ -1,3 +1,10 @@
+radxa-system-config (0.3.15) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Add radxa-system-config-{{ $suite }}
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 18 Oct 2023 09:19:39 +0000
+
 radxa-system-config (0.3.14) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
