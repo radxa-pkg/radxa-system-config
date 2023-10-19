@@ -3,6 +3,10 @@ set -e
 
 case $1 in
     configure)
+        if [ ! -e /etc/default ]
+        then
+            mkdir -p /etc/default
+        fi
         if [ ! -e /etc/default/zramswap ]
         then
             touch /etc/default/zramswap
@@ -16,6 +20,10 @@ case $1 in
             echo "PERCENT=50" >> /etc/default/zramswap
         fi
 
+        if [ ! -e /etc/plymouth ]
+        then
+            mkdir -p /etc/plymouth
+        fi
         if ! grep -v -e '#' -e '^$' /etc/plymouth/plymouthd.conf >/dev/null 2>/dev/null
         then
             cat << EOF >> /etc/plymouth/plymouthd.conf
@@ -44,7 +52,6 @@ rockchip-cpufreq
 ### END OF RADXA-SYSTEM-CONFIG-COMMON SECTION
 EOF
         fi
-
         ;;
 esac
     
