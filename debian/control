@@ -10,24 +10,14 @@ Build-Depends: debhelper (>=12~),
 Package: radxa-system-config-amlogic
 Architecture: all
 Priority: optional
-Depends: radxa-system-config-common,
-         ${misc:Depends},
+Depends: ${misc:Depends},
 Description: Amlogic system config files
  This package provides system config files for Amlogic devices.
-
-Package: radxa-system-config-common
-Architecture: all
-Priority: optional
-Depends: radxa-system-config-suite,
-         ${misc:Depends},
-Description: Common system config files
- This package provides common system config files.
 
 Package: radxa-system-config-rockchip
 Architecture: all
 Priority: optional
-Depends: radxa-system-config-common,
-         ${misc:Depends},
+Depends: ${misc:Depends},
 Description: Rockchip system config files
  This package provides system config files for Rockchip devices.
 
@@ -39,11 +29,19 @@ Depends: radxa-system-config-rockchip,
 Description: Rockchip system config files
  This package provides system config files for Rockchip RK3399 devices.
 
-Package: radxa-system-config-buster
+Package: radxa-system-config-common
 Architecture: all
 Priority: optional
 Depends: ${misc:Depends},
-Provides: radxa-system-config-suite
+Description: Common system config files
+ This package provides common system config files.
+
+Package: radxa-system-config-buster
+Architecture: all
+Priority: optional
+Depends: radxa-system-config-common,
+         ${misc:Depends},
+Provides: radxa-system-config
 Description: Common system config files
  This package provides Debian Buster system config files.
  This is currently an empty package.
@@ -51,24 +49,27 @@ Description: Common system config files
 Package: radxa-system-config-bullseye
 Architecture: all
 Priority: optional
-Depends: ${misc:Depends},
-Provides: radxa-system-config-suite
+Depends: radxa-system-config-common,
+         ${misc:Depends},
+Provides: radxa-system-config
 Description: Common system config files
  This package provides Debian Bullseye system config files.
 
 Package: radxa-system-config-bookworm
 Architecture: all
 Priority: optional
-Depends: ${misc:Depends},
-Provides: radxa-system-config-suite
+Depends: radxa-system-config-common,
+         ${misc:Depends},
+Provides: radxa-system-config
 Description: Common system config files
  This package provides Debian Bookworm system config files.
 
 Package: radxa-system-config-focal
 Architecture: all
 Priority: optional
-Depends: ${misc:Depends},
-Provides: radxa-system-config-suite
+Depends: radxa-system-config-common,
+         ${misc:Depends},
+Provides: radxa-system-config
 Description: Common system config files
  This package provides Ubuntu Focal system config files.
  This is currently an empty package.
@@ -76,8 +77,9 @@ Description: Common system config files
 Package: radxa-system-config-jammy
 Architecture: all
 Priority: optional
-Depends: ${misc:Depends},
-Provides: radxa-system-config-suite
+Depends: radxa-system-config-common,
+         ${misc:Depends},
+Provides: radxa-system-config
 Description: Common system config files
  This package provides Ubuntu Jammy system config files.
  This is currently an empty package.
