@@ -1,3 +1,10 @@
+radxa-system-config (0.4.2) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Decopule hardware config with software config
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 19 Oct 2023 03:22:09 +0000
+
 radxa-system-config (0.4.1) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
