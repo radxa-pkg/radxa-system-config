@@ -1,3 +1,10 @@
+radxa-system-config (0.4.3) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Fix installation in CLI systems
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 19 Oct 2023 04:06:36 +0000
+
 radxa-system-config (0.4.2) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
