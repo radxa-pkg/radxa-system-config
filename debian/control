@@ -49,6 +49,8 @@ Description: Common system config files
 Package: radxa-system-config-bullseye
 Architecture: all
 Priority: optional
+Replaces: radxa-system-config-rockchip (<< 0.3.15),
+Breaks: radxa-system-config-rockchip (<< 0.3.15),
 Depends: radxa-system-config-common,
          ${misc:Depends},
 Provides: radxa-system-config
@@ -58,6 +60,10 @@ Description: Common system config files
 Package: radxa-system-config-bookworm
 Architecture: all
 Priority: optional
+Replaces: radxa-system-config-common (<< 0.3.15),
+          radxa-system-config-amlogic (<< 0.4.0),
+Breaks: radxa-system-config-common (<< 0.3.15),
+        radxa-system-config-amlogic (<< 0.4.0),
 Depends: radxa-system-config-common,
          ${misc:Depends},
 Provides: radxa-system-config
