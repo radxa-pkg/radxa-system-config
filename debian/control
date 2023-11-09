@@ -5,6 +5,7 @@ Priority: optional
 Standards-Version: 4.6.0
 Build-Depends: debhelper (>=12~),
                devscripts,
+               dh-exec,
                lintian,
 
 Package: radxa-system-config-amlogic
@@ -32,7 +33,8 @@ Description: Rockchip system config files
 Package: radxa-system-config-common
 Architecture: all
 Priority: optional
-Depends: ${misc:Depends},
+Depends: radxa-system-config-kernel-cmdline,
+         ${misc:Depends},
 Description: Common system config files
  This package provides common system config files.
 
@@ -89,3 +91,48 @@ Provides: radxa-system-config
 Description: Common system config files
  This package provides Ubuntu Jammy system config files.
  This is currently an empty package.
+
+Package: radxa-system-config-kernel-cmdline-no-serial
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends},
+Provides: radxa-system-config-kernel-cmdline
+Description: Kernel cmdline config file
+ This package provides Kernel cmdline config file.
+ Serial console is disabled.
+
+Package: radxa-system-config-kernel-cmdline-ttyaml0
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends},
+Provides: radxa-system-config-kernel-cmdline
+Description: Kernel cmdline config file
+ This package provides Kernel cmdline config file.
+ Serial console is enabled on ttyAML0.
+
+Package: radxa-system-config-kernel-cmdline-ttyfiq0
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends},
+Provides: radxa-system-config-kernel-cmdline
+Description: Kernel cmdline config file
+ This package provides Kernel cmdline config file.
+ Serial console is enabled on ttyFIQ0.
+
+Package: radxa-system-config-kernel-cmdline-ttys0
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends},
+Provides: radxa-system-config-kernel-cmdline
+Description: Kernel cmdline config file
+ This package provides Kernel cmdline config file.
+ Serial console is enabled on ttyS0.
+
+Package: radxa-system-config-kernel-cmdline-ttys2
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends},
+Provides: radxa-system-config-kernel-cmdline
+Description: Kernel cmdline config file
+ This package provides Kernel cmdline config file.
+ Serial console is enabled on ttyS2.
