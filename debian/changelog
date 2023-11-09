@@ -1,3 +1,10 @@
+radxa-system-config (0.5.0) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Add radxa-system-config-kernel-cmdline
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 09 Nov 2023 16:20:13 +0800
+
 radxa-system-config (0.4.4) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
