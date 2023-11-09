@@ -33,8 +33,7 @@ Description: Rockchip system config files
 Package: radxa-system-config-common
 Architecture: all
 Priority: optional
-Depends: radxa-system-config-kernel-cmdline,
-         ${misc:Depends},
+Depends: ${misc:Depends},
 Description: Common system config files
  This package provides common system config files.
 
