@@ -3,7 +3,10 @@ set -e
 
 case $1 in
     install|upgrade)
-        conflicts="/usr/share/applications/mimeapps.list"
+        conflicts="
+        /usr/share/applications/mimeapps.list
+        /etc/modprobe.d/panfrost.conf
+        "
         for i in $conflicts
         do
             dpkg-divert --package radxa-system-config-rockchip --divert "$i.bak" --rename "$i"
