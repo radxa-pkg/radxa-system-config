@@ -1,3 +1,10 @@
+radxa-system-config (0.5.3) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Update default conf with trigger
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 06 Dec 2023 12:21:24 +0000
+
 radxa-system-config (0.5.2) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
