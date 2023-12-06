@@ -1,0 +1,4 @@
+interest-noawait /etc/default/zramswap
+interest-noawait /etc/plymouth/plymouthd.conf
+interest-noawait /etc/default/u-boot
+interest-noawait /etc/security/pam_env.conf
