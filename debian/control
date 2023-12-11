@@ -11,14 +11,16 @@ Build-Depends: debhelper (>=12~),
 Package: radxa-system-config-amlogic
 Architecture: all
 Priority: optional
-Depends: ${misc:Depends},
+Depends: radxa-system-config-common,
+         ${misc:Depends},
 Description: Amlogic system config files
  This package provides system config files for Amlogic devices.
 
 Package: radxa-system-config-rockchip
 Architecture: all
 Priority: optional
-Depends: ${misc:Depends},
+Depends: radxa-system-config-common,
+         ${misc:Depends},
 Description: Rockchip system config files
  This package provides system config files for Rockchip devices.
 
