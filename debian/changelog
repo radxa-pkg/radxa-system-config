@@ -1,3 +1,11 @@
+radxa-system-config (0.5.4) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Fix package dependency
+  * Restore file provider on uninstall
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 11 Dec 2023 10:43:18 +0000
+
 radxa-system-config (0.5.3) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
