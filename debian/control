@@ -96,7 +96,8 @@ Description: Common system config files
 Package: radxa-system-config-kernel-cmdline-no-serial
 Architecture: all
 Priority: optional
-Depends: ${misc:Depends},
+Depends: u-boot-menu,
+         ${misc:Depends},
 Provides: radxa-system-config-kernel-cmdline
 Description: Kernel cmdline config file
  This package provides Kernel cmdline config file.
@@ -105,7 +106,8 @@ Description: Kernel cmdline config file
 Package: radxa-system-config-kernel-cmdline-ttyaml0
 Architecture: all
 Priority: optional
-Depends: ${misc:Depends},
+Depends: u-boot-menu,
+         ${misc:Depends},
 Provides: radxa-system-config-kernel-cmdline
 Description: Kernel cmdline config file
  This package provides Kernel cmdline config file.
@@ -114,7 +116,8 @@ Description: Kernel cmdline config file
 Package: radxa-system-config-kernel-cmdline-ttyfiq0
 Architecture: all
 Priority: optional
-Depends: ${misc:Depends},
+Depends: u-boot-menu,
+         ${misc:Depends},
 Provides: radxa-system-config-kernel-cmdline
 Description: Kernel cmdline config file
  This package provides Kernel cmdline config file.
@@ -123,7 +126,8 @@ Description: Kernel cmdline config file
 Package: radxa-system-config-kernel-cmdline-ttys0
 Architecture: all
 Priority: optional
-Depends: ${misc:Depends},
+Depends: u-boot-menu,
+         ${misc:Depends},
 Provides: radxa-system-config-kernel-cmdline
 Description: Kernel cmdline config file
  This package provides Kernel cmdline config file.
@@ -132,7 +136,8 @@ Description: Kernel cmdline config file
 Package: radxa-system-config-kernel-cmdline-ttys2
 Architecture: all
 Priority: optional
-Depends: ${misc:Depends},
+Depends: u-boot-menu,
+         ${misc:Depends},
 Provides: radxa-system-config-kernel-cmdline
 Description: Kernel cmdline config file
  This package provides Kernel cmdline config file.

@@ -3,7 +3,6 @@ set -e
 
 case $1 in
     configure)
-        deb-systemd-helper mask sleep.target suspend.target hibernate.target hybrid-sleep.target
         dpkg-trigger update-initramfs
         ;;
 esac

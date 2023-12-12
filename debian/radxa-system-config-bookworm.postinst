@@ -16,6 +16,8 @@ case $1 in
 # This session will be preselected when the login screen appears.
 Session=/usr/share/wayland-sessions/plasmawayland.desktop
 EOF
+
+        dpkg-trigger update-initramfs
         fi
         ;;
 esac

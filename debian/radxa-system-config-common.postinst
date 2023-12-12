@@ -70,6 +70,8 @@ EOF
         then
             echo 'QT_QUICK_BACKEND DEFAULT=software' >> /etc/security/pam_env.conf
         fi
+
+        dpkg-trigger update-initramfs
         ;;
 esac
     
