@@ -1,3 +1,11 @@
+radxa-system-config (0.5.5) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Add initramfs and u-boot-menu rebuild
+  * Add dkms packages with custom config
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 12 Dec 2023 04:05:21 +0000
+
 radxa-system-config (0.5.4) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
