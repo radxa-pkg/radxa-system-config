@@ -142,3 +142,19 @@ Provides: radxa-system-config-kernel-cmdline
 Description: Kernel cmdline config file
  This package provides Kernel cmdline config file.
  Serial console is enabled on ttyS2.
+
+Package: radxa-system-config-r8125-dkms
+Architecture: all
+Priority: optional
+Depends: r8125-dkms,
+         ${misc:Depends},
+Description: r8125 config files
+ This package provides r8125 config files.
+
+Package: radxa-system-config-rtk-btusb-dkms
+Architecture: all
+Priority: optional
+Depends: rtk-btusb-dkms,
+         ${misc:Depends},
+Description: rtk-btusb config files
+ This package provides rtk-btusb config files.
