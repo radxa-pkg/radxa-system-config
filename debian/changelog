@@ -1,3 +1,15 @@
+radxa-system-config (0.5.6) jammy; urgency=medium
+
+  [ dependabot[bot] ]
+  * Bump actions/download-artifact from 3 to 4
+  * Bump actions/upload-artifact from 3 to 4
+
+  [ ZHANG Yuntian ]
+  * cmdline: fix boot VGA console
+  * Add radxa-system-config-aic8800-dkms
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 02 Jan 2024 10:24:44 +0000
+
 radxa-system-config (0.5.5) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
