@@ -158,3 +158,12 @@ Depends: rtk-btusb-dkms,
          ${misc:Depends},
 Description: rtk-btusb config files
  This package provides rtk-btusb config files.
+
+Package: radxa-system-config-aic8800-dkms
+Architecture: all
+Priority: optional
+Depends: aic8800-dkms,
+         aicrf-test,
+         ${misc:Depends},
+Description: aic8800-dkms config files
+ This package provides aic8800-dkms config files.
