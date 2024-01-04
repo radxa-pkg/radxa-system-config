@@ -1,3 +1,10 @@
+radxa-system-config (0.5.7) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Support u-boot-menu 4.4.2
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 04 Jan 2024 07:27:44 +0000
+
 radxa-system-config (0.5.6) jammy; urgency=medium
 
   [ dependabot[bot] ]
