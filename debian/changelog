@@ -1,3 +1,10 @@
+radxa-system-config (0.5.8) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * fix: disable D-Bus requirement of WirePlumber
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 23 Jan 2024 08:44:16 +0000
+
 radxa-system-config (0.5.7) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
