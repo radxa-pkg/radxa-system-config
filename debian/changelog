@@ -1,3 +1,11 @@
+radxa-system-config (0.5.9) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * fix: add missing end-of-file new line
+  * feat: load ledtrig-disk on boot
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 24 Jan 2024 06:49:50 +0000
+
 radxa-system-config (0.5.8) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
