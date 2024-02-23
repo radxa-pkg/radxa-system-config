@@ -1,3 +1,10 @@
+radxa-system-config (0.6.0) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * feat: rename radxa-system-config-aic8800-dkms
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 23 Feb 2024 16:23:14 +0800
+
 radxa-system-config (0.5.9) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
