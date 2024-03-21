@@ -6,6 +6,7 @@ BrowserApplication=firefox-esr.desktop
 
 [KDE]
 LookAndFeelPackage=org.debian.desktop
+# Open files with double clicks
 SingleClick=false
 
 # Fix User Avatar in System Settings
@@ -18,5 +19,6 @@ SceneGraphBackend=rhi
 # WHY: https://bugzilla.redhat.com/show_bug.cgi?id=1929643
 # FROM: https://unix.stackexchange.com/a/653947
 [KDE Action Restrictions]
+# KDE Wayland does not support sessions
 action/start_new_session=false
 action/switch_user=false
