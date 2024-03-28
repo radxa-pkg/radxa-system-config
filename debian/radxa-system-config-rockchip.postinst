@@ -2,7 +2,12 @@
 set -e
 
 case $1 in
-    configure)
+    configure|triggered)
+        if [ -e /usr/share/desktop-base/kf5-settings/kdeglobals ]
+        then
+            sed -i "s/BrowserApplication=firefox-esr.desktop/BrowserApplication=chromium.desktop/" \
+                /usr/share/desktop-base/kf5-settings/kdeglobals
+        fi
         dpkg-trigger update-initramfs
         ;;
 esac
