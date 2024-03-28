@@ -1,3 +1,18 @@
+radxa-system-config (0.6.1) jammy; urgency=medium
+
+  [ dependabot[bot] ]
+  * Bump softprops/action-gh-release from 1 to 2
+
+  [ ZHANG Yuntian ]
+  * doc: update comments fomr Bookworm configuration files
+  * fix: move amlogic specific hack to its own package
+  * chore: update KDE Bookworm configs
+  * feat: set default browser to Chromium for Rockchip devices
+  * fix: make distro config applied before SoC config
+  * fix: disable Wayland session for Rockchip
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 28 Mar 2024 12:17:41 +0000
+
 radxa-system-config (0.6.0) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
