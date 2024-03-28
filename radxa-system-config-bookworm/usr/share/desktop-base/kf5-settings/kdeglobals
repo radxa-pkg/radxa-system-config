@@ -21,4 +21,5 @@ SceneGraphBackend=rhi
 [KDE Action Restrictions]
 # KDE Wayland does not support sessions
 action/start_new_session=false
+# Rockchip 6.1 kernel will crash without message even with X11
 action/switch_user=false
