@@ -8,6 +8,7 @@ case $1 in
         conflicts="
         /usr/share/applications/mimeapps.list
         /etc/modprobe.d/panfrost.conf
+        /usr/share/wayland-sessions/plasmawayland.desktop
         "
         for i in $conflicts
         do
