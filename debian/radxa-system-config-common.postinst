@@ -7,11 +7,11 @@ case $1 in
         then
             mkdir -p /etc/default
         fi
-        if ( . /etc/default/zramswap && [ -z "$ALGO" ] )
+        if ( . /etc/default/zramswap 2>/dev/null && [ -z "$ALGO" ] )
         then
             echo "ALGO=zstd" >> /etc/default/zramswap
         fi
-        if ( . /etc/default/zramswap && [ -z "$PERCENT" ] )
+        if ( . /etc/default/zramswap 2>/dev/null && [ -z "$PERCENT" ] )
         then
             echo "PERCENT=50" >> /etc/default/zramswap
         fi
