@@ -1,3 +1,18 @@
+radxa-system-config (0.6.2) jammy; urgency=medium
+
+  [ CodeChenL ]
+  * fix: ignore expected errors
+  * fix: modify the path to kglobalshortcutsrc package
+  * feat: add CODEOWNERS
+
+  [ ZHANG Yuntian ]
+  * fix: add missing dependency
+  * fix: add config dependencies
+  * ci: check commit messages
+  * ci: sync with rsetup
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 17 Apr 2024 15:01:29 +0800
+
 radxa-system-config (0.6.1) jammy; urgency=medium
 
   [ dependabot[bot] ]
