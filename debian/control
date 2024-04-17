@@ -46,6 +46,8 @@ Architecture: all
 Priority: optional
 Depends: radxa-system-config-common,
          ${misc:Depends},
+Replaces: radxa-system-config,
+Conflicts: radxa-system-config,
 Provides: radxa-system-config
 Description: Common system config files
  This package provides Debian Buster system config files.
@@ -55,6 +57,8 @@ Package: radxa-system-config-bullseye
 Architecture: all
 Priority: optional
 Replaces: radxa-system-config-rockchip (<< 0.3.15),
+          radxa-system-config,
+Conflicts: radxa-system-config,
 Breaks: radxa-system-config-rockchip (<< 0.3.15),
 Depends: radxa-system-config-common,
          ${misc:Depends},
@@ -67,6 +71,8 @@ Architecture: all
 Priority: optional
 Replaces: radxa-system-config-common (<< 0.3.15),
           radxa-system-config-amlogic (<< 0.4.0),
+          radxa-system-config,
+Conflicts: radxa-system-config,
 Breaks: radxa-system-config-common (<< 0.3.15),
         radxa-system-config-amlogic (<< 0.4.0),
 Depends: radxa-system-config-common,
@@ -80,6 +86,8 @@ Architecture: all
 Priority: optional
 Depends: radxa-system-config-common,
          ${misc:Depends},
+Replaces: radxa-system-config,
+Conflicts: radxa-system-config,
 Provides: radxa-system-config
 Description: Common system config files
  This package provides Ubuntu Focal system config files.
@@ -90,6 +98,8 @@ Architecture: all
 Priority: optional
 Depends: radxa-system-config-common,
          ${misc:Depends},
+Replaces: radxa-system-config,
+Conflicts: radxa-system-config,
 Provides: radxa-system-config
 Description: Common system config files
  This package provides Ubuntu Jammy system config files.
