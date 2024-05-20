@@ -36,7 +36,7 @@ Package: radxa-system-config-common
 Architecture: all
 Priority: optional
 Depends: ${misc:Depends},
-Recommends: sysfsutils,
+Recommends: systemd,
             zram-tools,
 Description: Common system config files
  This package provides common system config files.
