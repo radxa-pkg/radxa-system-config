@@ -1,3 +1,15 @@
+radxa-system-config (0.6.4) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * refactor: move sysctl config to distro location
+  * feat: increase vm.max_map_count
+  * refactor: use systemd-tmpfiles to manage sysfs config
+  * fix: replace sysfsutils dependency with systemd
+  * fix: do not cause service failure if write failed
+  * feat: add ledtrig-netdev
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 22 May 2024 10:05:30 +0000
+
 radxa-system-config (0.6.3) jammy; urgency=medium
 
   [ CodeChenL ]
