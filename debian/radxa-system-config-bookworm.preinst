@@ -1,4 +1,5 @@
 #!/bin/sh
+
 set -e
 
 case $1 in
@@ -10,7 +11,7 @@ case $1 in
         done
         ;;
 esac
-    
+
 #DEBHELPER#
 
 exit 0
