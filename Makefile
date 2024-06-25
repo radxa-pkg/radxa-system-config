@@ -42,12 +42,16 @@ $(SRC-DOC)/SOURCE: $(SRC-DOC)
 	echo -e "git clone $(shell git remote get-url origin)\ngit checkout $(shell git rev-parse HEAD)" > "$@"
 
 SRC-KCMD	:=	radxa-system-config-kernel-cmdline/etc/kernel
-KCMD		:=	$(SRC-KCMD)/cmdline.ttyFIQ0 $(SRC-KCMD)/cmdline.ttyAML0 $(SRC-KCMD)/cmdline.ttyS2 $(SRC-KCMD)/cmdline.ttyS0
+KCMD		:=	$(SRC-KCMD)/cmdline.ttyFIQ0 $(SRC-KCMD)/cmdline.ttyFIQ0.115200 \
+				$(SRC-KCMD)/cmdline.ttyAML0 $(SRC-KCMD)/cmdline.ttyS2 $(SRC-KCMD)/cmdline.ttyS0
 .PHONY: build-kernel-cmdline
 build-kernel-cmdline: $(KCMD)
 
 $(SRC-KCMD)/cmdline.ttyFIQ0: $(SRC-KCMD)/cmdline
 	echo "console=ttyFIQ0,1500000n8 $(shell cat $(SRC-KCMD)/cmdline)" > "$@"
+
+$(SRC-KCMD)/cmdline.ttyFIQ0.115200: $(SRC-KCMD)/cmdline
+	echo "console=ttyFIQ0,115200n8 $(shell cat $(SRC-KCMD)/cmdline)" > "$@"
 
 $(SRC-KCMD)/cmdline.ttyAML0: $(SRC-KCMD)/cmdline
 	echo "console=ttyAML0,115200n8 $(shell cat $(SRC-KCMD)/cmdline)" > "$@"

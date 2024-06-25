@@ -135,6 +135,16 @@ Description: Kernel cmdline config file
  This package provides Kernel cmdline config file.
  Serial console is enabled on ttyFIQ0 at 1500000 Baud.
 
+Package: radxa-system-config-kernel-cmdline-ttyfiq0-115200
+Architecture: all
+Priority: optional
+Depends: u-boot-menu,
+         ${misc:Depends},
+Provides: radxa-system-config-kernel-cmdline
+Description: Kernel cmdline config file
+ This package provides Kernel cmdline config file.
+ Serial console is enabled on ttyFIQ0 at 115200 Baud.
+
 Package: radxa-system-config-kernel-cmdline-ttys0
 Architecture: all
 Priority: optional
