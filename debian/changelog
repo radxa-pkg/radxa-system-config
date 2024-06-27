@@ -1,3 +1,18 @@
+radxa-system-config (0.6.6) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Revert "fix: rockchip: gdm switch to X11"
+  * fix: add baud description
+  * format: add missing separation
+  * feat: add 115200 baud for ttyFIQ0
+  * Revert "Revert "fix: rockchip: gdm switch to X11""
+
+  [ CodeChenL ]
+  * refactor: common: rename sddm.service override config file
+  * fix: common: exit plymouth before starting dm
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 27 Jun 2024 06:57:09 +0000
+
 radxa-system-config (0.6.5) jammy; urgency=medium
 
   [ CodeChenL ]
