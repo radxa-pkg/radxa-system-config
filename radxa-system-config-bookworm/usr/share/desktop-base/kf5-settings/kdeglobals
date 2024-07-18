@@ -5,7 +5,7 @@ XftSubPixel=rgb
 BrowserApplication=firefox-esr.desktop
 
 [KDE]
-LookAndFeelPackage=org.debian.desktop
+LookAndFeelPackage=com.radxa.desktop
 # Open files with double clicks
 SingleClick=false
 
