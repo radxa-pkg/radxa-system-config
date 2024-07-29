@@ -32,6 +32,29 @@ Depends: radxa-system-config-rockchip,
 Description: Rockchip system config files
  This package provides system config files for Rockchip RK3399 devices.
 
+Package: radxa-system-config-rockchip-glamor
+Architecture: all
+Priority: optional
+Replaces: radxa-system-config-rockchip-xorg,
+Conflicts: radxa-system-config-rockchip-xorg,
+Provides: radxa-system-config-rockchip-xorg,
+Depends: radxa-system-config-rockchip,
+         ${misc:Depends},
+Description: Rockchip X.org config files
+ This package provides system config files for Rockchip X.org glamor
+ acceleration.
+
+Package: radxa-system-config-rockchip-exa
+Architecture: all
+Priority: optional
+Replaces: radxa-system-config-rockchip-xorg,
+Conflicts: radxa-system-config-rockchip-xorg,
+Provides: radxa-system-config-rockchip-xorg,
+Depends: radxa-system-config-rockchip,
+         ${misc:Depends},
+Description: Rockchip X.org config files
+ This package provides system config files for Rockchip X.org exa acceleration.
+
 Package: radxa-system-config-common
 Architecture: all
 Priority: optional
