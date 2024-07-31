@@ -1,3 +1,11 @@
+radxa-system-config (0.6.8) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * refactor: move /etc config to /usr/share
+  * feat: split xorg config to separate packages
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 31 Jul 2024 09:29:30 +0000
+
 radxa-system-config (0.6.7) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
