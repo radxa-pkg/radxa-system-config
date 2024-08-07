@@ -1,3 +1,10 @@
+radxa-system-config (0.6.9) jammy; urgency=medium
+
+  [ CodeChenL ]
+  * fix: rockchip-exa: add xfwm.xml
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 07 Aug 2024 06:11:18 +0000
+
 radxa-system-config (0.6.8) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
