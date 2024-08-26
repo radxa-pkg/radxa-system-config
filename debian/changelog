@@ -1,3 +1,10 @@
+radxa-system-config (0.6.10) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * feat: add radxa-system-config-rockchip-glamor-swcursor
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 26 Aug 2024 09:08:44 +0000
+
 radxa-system-config (0.6.9) jammy; urgency=medium
 
   [ CodeChenL ]
