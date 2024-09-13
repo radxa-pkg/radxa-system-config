@@ -1,0 +1,4 @@
+[org/gnome/settings-daemon/plugins/power]
+# - Time inactive in seconds before suspending with AC power
+#   1200=20 minutes, 0=never
+sleep-inactive-ac-timeout=0
