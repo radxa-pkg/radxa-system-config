@@ -1,3 +1,10 @@
+radxa-system-config (0.6.11) jammy; urgency=medium
+
+  [ Chen Jiali ]
+  * fix: gdm: disabled autosleep
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 08 Oct 2024 10:34:06 +0000
+
 radxa-system-config (0.6.10) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
