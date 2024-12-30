@@ -234,7 +234,8 @@ Priority: optional
 Depends: aic8800-usb-dkms,
          ${misc:Depends},
 Provides: radxa-system-config-aic8800-dkms (= 0.6.0)
-Conflicts: radxa-system-config-aic8800-dkms (<< 0.6.0)
+Conflicts: radxa-system-config-aic8800-dkms (<< 0.6.0),
+           radxa-udev (<= 0.1.3)
 Replaces: radxa-system-config-aic8800-dkms (<< 0.6.0)
 Description: aic8800-usb-dkms config files
  This package provides aic8800-usb-dkms config files.
