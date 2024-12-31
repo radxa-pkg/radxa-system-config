@@ -43,7 +43,8 @@ $(SRC-DOC)/SOURCE: $(SRC-DOC)
 
 SRC-KCMD	:=	radxa-system-config-kernel-cmdline/etc/kernel
 KCMD		:=	$(SRC-KCMD)/cmdline.ttyFIQ0 $(SRC-KCMD)/cmdline.ttyFIQ0.115200 \
-				$(SRC-KCMD)/cmdline.ttyAML0 $(SRC-KCMD)/cmdline.ttyS2 $(SRC-KCMD)/cmdline.ttyS0
+				$(SRC-KCMD)/cmdline.ttyAML0 $(SRC-KCMD)/cmdline.ttyS2 \
+				$(SRC-KCMD)/cmdline.ttyS0 $(SRC-KCMD)/cmdline.ttyAMA2
 .PHONY: build-kernel-cmdline
 build-kernel-cmdline: $(KCMD)
 
@@ -61,6 +62,9 @@ $(SRC-KCMD)/cmdline.ttyS2: $(SRC-KCMD)/cmdline
 
 $(SRC-KCMD)/cmdline.ttyS0: $(SRC-KCMD)/cmdline
 	echo "console=ttyS0,1500000n8 $(shell cat $(SRC-KCMD)/cmdline)" > "$@"
+
+$(SRC-KCMD)/cmdline.ttyAMA2: $(SRC-KCMD)/cmdline
+	echo "console=ttyAMA2,115200n8 $(shell cat $(SRC-KCMD)/cmdline)" > "$@"
 
 #
 # Clean

@@ -200,6 +200,16 @@ Description: Kernel cmdline config file
  This package provides Kernel cmdline config file.
  Serial console is enabled on ttyS2 at 1500000 Baud.
 
+Package: radxa-system-config-kernel-cmdline-ttyama2
+Architecture: all
+Priority: optional
+Depends: u-boot-menu,
+         ${misc:Depends},
+Provides: radxa-system-config-kernel-cmdline
+Description: Kernel cmdline config file
+ This package provides Kernel cmdline config file.
+ Serial console is enabled on ttyAMA2 at 115200 Baud.
+
 Package: radxa-system-config-r8125-dkms
 Architecture: all
 Priority: optional
