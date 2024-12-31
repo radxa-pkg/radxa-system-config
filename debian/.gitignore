@@ -4,5 +4,6 @@
 /radxa-system-config-*/
 /tmp
 /*.debhelper.log
+/*.postinst.debhelper
 /*.postrm.debhelper
 /*.substvars
