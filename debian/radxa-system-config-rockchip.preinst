@@ -5,7 +5,7 @@ case $1 in
     install|upgrade)
         conflicts="
         /usr/share/applications/mimeapps.list
-        /etc/modprobe.d/panfrost.conf
+        /usr/lib/modprobe.d/panfrost.conf
         /usr/share/wayland-sessions/plasmawayland.desktop
         /usr/share/gdm/gdm.schemas
         "
