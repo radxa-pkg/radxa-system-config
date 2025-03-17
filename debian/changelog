@@ -1,3 +1,16 @@
+radxa-system-config (0.6.13) noble; urgency=medium
+
+  [ Chen Jiali ]
+  * fix: setting PrimaryGPU to RockchipDRM
+  * fix: rockchip: disable mali driver by default
+  * fix: move all modprobe config to /usr/lib
+
+  [ CodeChenL ]
+  * refactor: bookworm: change default KDE theme
+  * chore: bookworm: add Depends radxa-desktop-branding
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 17 Mar 2025 08:16:22 +0000
+
 radxa-system-config (0.6.12) jammy; urgency=medium
 
   [ Chen Jiali ]
