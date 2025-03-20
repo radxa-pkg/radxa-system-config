@@ -1,0 +1,18 @@
+#!/bin/sh
+set -e
+
+#DEBHELPER#
+
+case $1 in
+    remove)
+        conflicts="
+        /usr/share/desktop-base/profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
+        "
+        for i in $conflicts
+        do
+            dpkg-divert --package radxa-system-config-rockchip-exa --rename --remove "$i"
+        done
+        ;;
+esac
+
+exit 0
