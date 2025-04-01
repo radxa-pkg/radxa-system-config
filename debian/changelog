@@ -1,3 +1,11 @@
+radxa-system-config (0.6.14) noble; urgency=medium
+
+  [ Chen Jiali ]
+  * fix: rockchip: add box_move and box_resize to xfwm.xml
+  * fix: add a blank line at the end
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 01 Apr 2025 08:32:57 +0000
+
 radxa-system-config (0.6.13) noble; urgency=medium
 
   [ Chen Jiali ]
