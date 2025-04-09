@@ -110,9 +110,9 @@ Replaces: radxa-system-config-common (<< 0.3.15),
 Conflicts: radxa-system-config,
 Breaks: radxa-system-config-common (<< 0.3.15),
         radxa-system-config-amlogic (<< 0.4.0),
-Depends: radxa-desktop-branding (>= 0.1.2),
-         radxa-system-config-common,
+Depends: radxa-system-config-common,
          ${misc:Depends},
+Recommends: radxa-desktop-branding (>= 0.1.2),
 Provides: radxa-system-config
 Description: Common system config files
  This package provides Debian Bookworm system config files.
