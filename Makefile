@@ -77,7 +77,7 @@ $(SRC-KCMD)/cmdline.ttyAS0: $(SRC-KCMD)/cmdline
 distclean: clean
 
 .PHONY: clean
-clean: clean-man clean-doc clean-deb
+clean: clean-man clean-doc clean-kernel-cmdline clean-deb
 
 .PHONY: clean-man
 clean-man:
@@ -86,6 +86,10 @@ clean-man:
 .PHONY: clean-doc
 clean-doc:
 	rm -rf $(DOCS)
+
+.PHONY: clean-kernel-cmdline
+clean-kernel-cmdline:
+	rm -rf $(KCMD)
 
 .PHONY: clean-deb
 clean-deb:
