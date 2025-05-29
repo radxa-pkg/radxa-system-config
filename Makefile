@@ -65,7 +65,7 @@ $(SRC-KCMD)/cmdline.ttyS0: $(SRC-KCMD)/cmdline
 	echo "console=ttyS0,1500000n8 $(shell cat $(SRC-KCMD)/cmdline)" > "$@"
 
 $(SRC-KCMD)/cmdline.ttyAMA2: $(SRC-KCMD)/cmdline
-	echo "console=ttyAMA2,115200n8 efi=noruntime $(shell cat $(SRC-KCMD)/cmdline)" > "$@"
+	echo "console=ttyAMA2,115200n8 efi=noruntime acpi=force $(shell cat $(SRC-KCMD)/cmdline)" > "$@"
 
 $(SRC-KCMD)/cmdline.ttyAS0: $(SRC-KCMD)/cmdline
 	echo "console=ttyAS0,115200n8 $(shell cat $(SRC-KCMD)/cmdline)" > "$@"
