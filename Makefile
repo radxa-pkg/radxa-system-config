@@ -6,8 +6,15 @@ LIBDIR ?= $(PREFIX)/lib
 SHAREDIR ?= $(PREFIX)/share
 MANDIR ?= $(SHAREDIR)/man
 
+.DEFAULT_GOAL := all
 .PHONY: all
 all: build
+
+.PHONY: devcontainer_setup
+devcontainer_setup:
+	sudo dpkg --add-architecture arm64
+	sudo apt-get update
+	sudo apt-get build-dep . -y
 
 #
 # Test
@@ -19,7 +26,7 @@ test:
 # Build
 #
 .PHONY: build
-build: build-man build-doc build-kernel-cmdline
+build: build-man build-kernel-cmdline
 
 SRC-MAN		:=	man
 SRCS-MAN	:=	$(wildcard $(SRC-MAN)/*.md)
@@ -29,17 +36,6 @@ build-man: $(MANS)
 
 $(SRC-MAN)/%: $(SRC-MAN)/%.md
 	pandoc "$<" -o "$@" --from markdown --to man -s
-
-SRC-DOC		:=	.
-DOCS		:=	$(SRC-DOC)/SOURCE
-build-doc: $(DOCS)
-
-$(SRC-DOC):
-	mkdir -p $(SRC-DOC)
-
-.PHONY: $(SRC-DOC)/SOURCE
-$(SRC-DOC)/SOURCE: $(SRC-DOC)
-	echo -e "git clone $(shell git remote get-url origin)\ngit checkout $(shell git rev-parse HEAD)" > "$@"
 
 SRC-KCMD	:=	radxa-system-config-kernel-cmdline/etc/kernel
 KCMD		:=	$(SRC-KCMD)/cmdline.ttyFIQ0 $(SRC-KCMD)/cmdline.ttyFIQ0.115200 \
@@ -77,15 +73,11 @@ $(SRC-KCMD)/cmdline.ttyAS0: $(SRC-KCMD)/cmdline
 distclean: clean
 
 .PHONY: clean
-clean: clean-man clean-doc clean-kernel-cmdline clean-deb
+clean: clean-man clean-kernel-cmdline clean-deb
 
 .PHONY: clean-man
 clean-man:
 	rm -rf $(MANS)
-
-.PHONY: clean-doc
-clean-doc:
-	rm -rf $(DOCS)
 
 .PHONY: clean-kernel-cmdline
 clean-kernel-cmdline:
@@ -100,11 +92,13 @@ clean-deb:
 #
 .PHONY: dch
 dch: debian/changelog
-	EDITOR=true gbp dch --ignore-branch --multimaint-merge --commit --release --dch-opt=--upstream
+	gbp dch --ignore-branch --multimaint-merge --release --spawn-editor=never \
+	--git-log='--no-merges --perl-regexp --invert-grep --grep=^(chore:\stemplates\sgenerated)' \
+	--dch-opt=--upstream --commit --commit-msg="feat: release %(version)s"
 
 .PHONY: deb
 deb: debian
-	debuild --no-lintian --lintian-hook "lintian --fail-on error,warning --suppress-tags bad-distribution-in-changes-file -- %p_%v_*.changes" --no-sign -b
+	debuild --no-lintian --lintian-hook "lintian --fail-on error,warning --suppress-tags-from-file $(PWD)/debian/common-lintian-overrides -- %p_%v_*.changes" --no-sign -b
 
 .PHONY: release
 release:
