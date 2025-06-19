@@ -1,3 +1,13 @@
+radxa-system-config (0.6.16) noble; urgency=medium
+
+  [ Jiali Chen ]
+  * fix: add `acpi=force` to cmdline.ttyAMA2
+
+  [ ZHANG Yuntian ]
+  * fix: add extra kernel args for Allwinner booting
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 19 Jun 2025 07:11:30 +0000
+
 radxa-system-config (0.6.15) noble; urgency=medium
 
   [ ZHANG Yuntian ]
