@@ -16,6 +16,14 @@ Depends: radxa-system-config,
 Description: Amlogic system config files
  This package provides system config files for Amlogic devices.
 
+Package: radxa-system-config-allwinner
+Architecture: all
+Priority: optional
+Depends: radxa-system-config,
+         ${misc:Depends},
+Description: Allwinner system config files
+ This package provides system config files for Allwinner devices.
+
 Package: radxa-system-config-rockchip
 Architecture: all
 Priority: optional
