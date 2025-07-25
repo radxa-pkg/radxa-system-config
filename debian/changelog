@@ -1,3 +1,10 @@
+radxa-system-config (0.6.18) noble; urgency=medium
+
+  [ Jiali Chen ]
+  * fix: add `mac_addr=${mac} mac1_addr=${mac1}` to cmdline.ttyAS0
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 25 Jul 2025 09:05:30 +0000
+
 radxa-system-config (0.6.17) noble; urgency=medium
 
   [ Nascs Fang ]
