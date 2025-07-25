@@ -68,7 +68,7 @@ $(SRC-KCMD)/cmdline.ttyAMA2: $(SRC-KCMD)/cmdline
 	echo "console=ttyAMA2,115200n8 efi=noruntime acpi=force $(shell cat $(SRC-KCMD)/cmdline)" > "$@"
 
 $(SRC-KCMD)/cmdline.ttyAS0: $(SRC-KCMD)/cmdline
-	echo "console=ttyAS0,115200n8 rootwait clk_ignore_unused $(shell cat $(SRC-KCMD)/cmdline)" > "$@"
+	echo "console=ttyAS0,115200n8 rootwait clk_ignore_unused mac_addr=\$${mac} mac1_addr=\$${mac1} $(shell cat $(SRC-KCMD)/cmdline)" > "$@"
 
 #
 # Clean
