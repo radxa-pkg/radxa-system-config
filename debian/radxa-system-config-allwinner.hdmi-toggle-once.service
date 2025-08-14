@@ -1,0 +1,14 @@
+[Unit]
+Description=HDMI toggle (1280x1024 -> 1920x1080) once after boot
+After=display-manager.service
+Wants=display-manager.service
+
+[Service]
+Type=oneshot
+# Give X/SDDM Some Time to Get Ready; If Not Enough, Adjust to 12~15.
+ExecStartPre=/bin/sleep 15
+ExecStart=/usr/bin/hdmi-toggle-once
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

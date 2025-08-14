@@ -1,0 +1,3 @@
+# DRM Hotplug Events (all GPUs/connectors); Run Fix Script Asynchronously with systemd-run.
+SUBSYSTEM=="drm", ACTION=="change", ENV{HOTPLUG}=="1", \
+  RUN+="/usr/bin/systemd-run --no-block /usr/bin/hdmi-hotplug-fix %k"
