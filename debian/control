@@ -20,6 +20,7 @@ Package: radxa-system-config-allwinner
 Architecture: all
 Priority: optional
 Depends: radxa-system-config,
+         parole,
          ${misc:Depends},
 Description: Allwinner system config files
  This package provides system config files for Allwinner devices.
