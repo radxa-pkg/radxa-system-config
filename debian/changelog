@@ -1,3 +1,16 @@
+radxa-system-config (0.6.20) noble; urgency=medium
+
+  [ dependabot[bot] ]
+  * chore(deps): bump actions/checkout from 4 to 5
+
+  [ Feng Zhang ]
+  * feat: allwinner: add udev rules of HID devices wakeup
+
+  [ SongJun Li ]
+  * fix: add hdmi udev and service
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 15 Aug 2025 11:29:26 +0000
+
 radxa-system-config (0.6.19) noble; urgency=medium
 
   [ Stephen Chen ]
