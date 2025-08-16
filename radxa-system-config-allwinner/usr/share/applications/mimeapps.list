@@ -4,3 +4,6 @@ x-scheme-handler/about=chromium-browser.desktop
 x-scheme-handler/http=chromium-browser.desktop
 x-scheme-handler/https=chromium-browser.desktop
 x-scheme-handler/unknown=chromium-browser.desktop
+video/mp2t=org.xfce.Parole.desktop
+video/mp4=org.xfce.Parole.desktop
+video/x-matroska=org.xfce.Parole.desktop
