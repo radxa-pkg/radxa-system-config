@@ -53,7 +53,7 @@ while [ $i -lt 20 ]; do
   [ "$STAT" = "connected" ] && break
   i=$((i+1)); sleep 0.5
 done
-radxa-system-config-allwinner/usr/bin/hdmi-toggle-once
+
 # 4) Set the output name: first try HDMI-1, and if not connected, fall back to automatic detection.
 OUT="HDMI-1"
 $XR --query | grep -q "^$OUT connected" || OUT="$($XR --query | awk '$2=="connected"{print $1; exit}')"
