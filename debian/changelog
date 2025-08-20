@@ -1,3 +1,13 @@
+radxa-system-config (0.6.21) noble; urgency=medium
+
+  [ Jiali Chen ]
+  * fix: prioritize using Parole to play videos
+  * fix: allwinner: set Parole display backend to xvimagesink
+  * fix: allwinner: prioritize using Parole to play webm video
+  * fix: allwinner: hdmi-toggle-once: remove delete nonsensical command line
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 20 Aug 2025 12:13:41 +0000
+
 radxa-system-config (0.6.20) noble; urgency=medium
 
   [ dependabot[bot] ]
