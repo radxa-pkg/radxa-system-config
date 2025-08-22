@@ -28,5 +28,11 @@
       "jammy",
       "jammy-test"
     ]
+  },
+  "radxa-system-config-noble_VERSION_all.deb": {
+    "Releases": [
+      "noble",
+      "noble-test"
+    ]
   }
 }
