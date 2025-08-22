@@ -150,6 +150,18 @@ Description: Common system config files
  This package provides Ubuntu Jammy system config files.
  This is currently an empty package.
 
+Package: radxa-system-config-noble
+Architecture: all
+Priority: optional
+Depends: radxa-system-config-common,
+         ${misc:Depends},
+Replaces: radxa-system-config,
+Conflicts: radxa-system-config,
+Provides: radxa-system-config
+Description: Common system config files
+ This package provides Ubuntu Noble system config files.
+ This is currently an empty package.
+
 Package: radxa-system-config-kernel-cmdline-no-serial
 Architecture: all
 Priority: optional
