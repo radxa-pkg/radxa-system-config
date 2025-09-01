@@ -1,3 +1,14 @@
+radxa-system-config (0.6.22) noble; urgency=medium
+
+  [ Guoguo ]
+  * feat: add radxa-system-config-noble package
+  * fix: add noble release configuration to pkg.conf.template
+
+  [ dependabot[bot] ]
+  * chore(deps): bump actions/upload-pages-artifact from 3 to 4
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 01 Sep 2025 08:10:24 +0000
+
 radxa-system-config (0.6.21) noble; urgency=medium
 
   [ Jiali Chen ]
