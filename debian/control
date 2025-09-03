@@ -252,6 +252,14 @@ Description: Kernel cmdline config file
  This package provides Kernel cmdline config file.
  Serial console is enabled on ttyMSM0 at 115200 Baud.
 
+Package: radxa-system-config-disable-sleep
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends},
+Description: Disable sleep mode
+ This package disables sleep mode on the system.
+ This is currently an empty package.
+
 Package: radxa-system-config-r8125-dkms
 Architecture: all
 Priority: optional

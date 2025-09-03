@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+
+#DEBHELPER#
+
+case $1 in
+    remove)
+        deb-systemd-helper unmask sleep.target suspend.target hibernate.target hybrid-sleep.target
+        ;;
+esac
+
+exit 0
