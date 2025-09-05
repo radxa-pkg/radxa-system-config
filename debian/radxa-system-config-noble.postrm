@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+
+#DEBHELPER#
+
+case $1 in
+    remove)
+        if [ -e /usr/share/kubuntu-default-settings/kf5-settings/kdeglobals ]; then
+            sed -i "s/BrowserApplication=firefox-esr.desktop/BrowserApplication=firefox_firefox.desktop/" \
+                /usr/share/kubuntu-default-settings/kf5-settings/kdeglobals
+        fi
+        ;;
+esac
+
+exit 0
