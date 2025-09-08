@@ -76,6 +76,14 @@ Depends: radxa-system-config-rockchip,
 Description: Rockchip X.org config files
  This package provides system config files for Rockchip X.org exa acceleration.
 
+Package: radxa-system-config-qualcomm
+Architecture: all
+Priority: optional
+Depends: radxa-system-config,
+         ${misc:Depends},
+Description: Qualcomm system config files
+ This package provides system config files for Qualcomm devices.
+
 Package: radxa-system-config-common
 Architecture: all
 Priority: optional
