@@ -1,3 +1,18 @@
+radxa-system-config (0.6.23) noble; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * fix: enable EFI runtime for CIX
+
+  [ Guoguo ]
+  * feat: add radxa-system-config-disable-sleep package
+  * feat: set default browser to firefox-esr for noble
+  * fix: set force_gl_vendor to notfreedreno for qualcomm device
+
+  [ Honglin Leng ]
+  * Revert "feat: enable rk3399 bcmdhd driver for ap6256/cm256sm"
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 09 Sep 2025 09:09:43 +0000
+
 radxa-system-config (0.6.22) noble; urgency=medium
 
   [ Guoguo ]
