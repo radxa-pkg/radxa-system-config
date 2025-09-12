@@ -163,6 +163,7 @@ Architecture: all
 Priority: optional
 Depends: radxa-system-config-common,
          ${misc:Depends},
+Recommends: radxa-desktop-branding (>= 0.1.3),
 Replaces: radxa-system-config,
 Conflicts: radxa-system-config,
 Provides: radxa-system-config
