@@ -169,7 +169,6 @@ Conflicts: radxa-system-config,
 Provides: radxa-system-config
 Description: Common system config files
  This package provides Ubuntu Noble system config files.
- This is currently an empty package.
 
 Package: radxa-system-config-kernel-cmdline-no-serial
 Architecture: all
