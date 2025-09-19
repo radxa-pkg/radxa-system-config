@@ -1,3 +1,11 @@
+radxa-system-config (0.6.24) noble; urgency=medium
+
+  [ Guoguo ]
+  * feat: include radxa-desktop-branding for noble
+  * feat: remove default browser settings scripts on noble
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 19 Sep 2025 10:52:42 +0000
+
 radxa-system-config (0.6.23) noble; urgency=medium
 
   [ ZHANG Yuntian ]
