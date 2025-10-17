@@ -1,3 +1,11 @@
+radxa-system-config (0.6.25) noble; urgency=medium
+
+  [ Guoguo ]
+  * feat: disable KDE wallet on noble
+  * feat: disable automatic session restore for noble
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 17 Oct 2025 07:06:46 +0000
+
 radxa-system-config (0.6.24) noble; urgency=medium
 
   [ Guoguo ]
