@@ -38,6 +38,7 @@ Architecture: all
 Priority: optional
 Depends: radxa-system-config-rockchip,
          ${misc:Depends},
+Recommends: irqbalance,
 Description: Rockchip system config files
  This package provides system config files for Rockchip RK3399 devices.
 
