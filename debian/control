@@ -29,6 +29,7 @@ Package: radxa-system-config-rockchip
 Architecture: all
 Priority: optional
 Depends: radxa-system-config,
+         radxa-system-config-gdm3-disable-sleep,
          ${misc:Depends},
 Description: Rockchip system config files
  This package provides system config files for Rockchip devices.
@@ -328,3 +329,10 @@ Conflicts: radxa-system-config-aic8800-dkms (<< 0.6.0),
 Replaces: radxa-system-config-aic8800-dkms (<< 0.6.0)
 Description: aic8800-usb-dkms config files
  This package provides aic8800-usb-dkms config files.
+
+Package: radxa-system-config-gdm3-disable-sleep
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends},
+Description: GDM3 config to disable sleep mode
+ This package provides GDM3 config to disable sleep mode.
