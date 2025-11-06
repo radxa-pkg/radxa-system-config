@@ -1,3 +1,19 @@
+radxa-system-config (0.6.27) noble; urgency=medium
+
+  [ dependabot[bot] ]
+  * chore(deps): bump actions/upload-artifact from 4 to 5
+
+  [ chongbiao Chen ]
+  * feat: add radxa-system-config-qcs6490
+
+  [ xzl ]
+  * feat(gdm3): disable GDM sleep by setting sleep-inactive-ac-timeout=0
+
+  [ ZHANG Yuntian ]
+  * fix: restore project specific build instruction
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 06 Nov 2025 10:27:31 +0000
+
 radxa-system-config (0.6.26) noble; urgency=medium
 
   [ ZHANG Yuntian ]
