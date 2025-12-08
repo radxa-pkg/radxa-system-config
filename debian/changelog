@@ -1,3 +1,10 @@
+radxa-system-config (0.6.28) noble; urgency=medium
+
+  [ chongbiao Chen ]
+  * feat: hide Plasma X11 session in display manager
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 08 Dec 2025 09:44:36 +0000
+
 radxa-system-config (0.6.27) noble; urgency=medium
 
   [ dependabot[bot] ]
