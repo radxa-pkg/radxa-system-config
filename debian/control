@@ -145,6 +145,20 @@ Provides: radxa-system-config
 Description: Common system config files
  This package provides Debian Bookworm system config files.
 
+Package: radxa-system-config-trixie
+Architecture: all
+Priority: optional
+Replaces: radxa-system-config,
+Conflicts: radxa-system-config,
+Provides: radxa-system-config
+Depends: radxa-system-config-common,
+         radxa-system-config-gdm3-disable-sleep,
+         ${misc:Depends},
+Recommends: radxa-desktop-branding,
+Description: Common system config files
+ This package provides Debian trixie system config files.
+ This is currently an empty package.
+
 Package: radxa-system-config-focal
 Architecture: all
 Priority: optional
