@@ -17,6 +17,12 @@
       "bookworm-test"
     ]
   },
+  "radxa-system-config-trixie_VERSION_all.deb": {
+    "Releases": [
+      "trixie",
+      "trixie-test"
+    ]
+  },
   "radxa-system-config-focal_VERSION_all.deb": {
     "Releases": [
       "focal",
@@ -31,6 +37,26 @@
   },
   "radxa-system-config-noble_VERSION_all.deb": {
     "Releases": [
+      "noble",
+      "noble-test"
+    ]
+  },
+  "*": {
+    "Releases": [
+      "buster",
+      "buster-test",
+      "bullseye",
+      "bullseye-test",
+      "bookworm",
+      "bookworm-test",
+      "trixie",
+      "trixie-test",
+      "sid",
+      "sid-test",
+      "focal",
+      "focal-test",
+      "jammy",
+      "jammy-test",
       "noble",
       "noble-test"
     ]
