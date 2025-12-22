@@ -1,0 +1,5 @@
+# On the Amlogic G12B platform, etnaviv device does not provide GPU functionality, \
+# it only provides NPU functionality. \
+# Therefore, add the "mutter-device-ignore" udev TAG to make GNOME series software ignore this DRM device.
+# Link: https://gitlab.gnome.org/GNOME/mutter/-/commit/8989c42d407436aa8f1976c17de22b73ed6a6caa
+ACTION=="add", SUBSYSTEM=="drm", ENV{ID_PATH}=="platform-etnaviv", TAG+="mutter-device-ignore"

@@ -1,6 +1,7 @@
 override_dh_installudev:
 	dh_installudev -pradxa-system-config-allwinner --name=enable_hid_wakeup --priority=60
 	dh_installudev -pradxa-system-config-allwinner --name=hdmi-hotplug --priority=60
+	dh_installudev -pradxa-system-config-amlogic --name=mutter-ignore-etnaviv --priority=60
 
 override_dh_installsystemd:
 	dh_installsystemd --name=hdmi-toggle-once
