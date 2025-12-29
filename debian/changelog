@@ -1,3 +1,13 @@
+radxa-system-config (0.6.29) noble; urgency=medium
+
+  [ Jiali Chen ]
+  * feat: add radxa-system-config-trixie
+  * fix: add trixie release configuration to pkg.conf.template
+  * fix: add udev rule mutter-ignore-etnaviv
+  * fix: amlogic: set PrimaryGPU\Device\Screen for Xorg
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 29 Dec 2025 09:17:29 +0000
+
 radxa-system-config (0.6.28) noble; urgency=medium
 
   [ chongbiao Chen ]
