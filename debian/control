@@ -85,7 +85,6 @@ Depends: radxa-system-config,
          ${misc:Depends},
 Description: Qualcomm system config files
  This package provides system config files for Qualcomm devices.
- This is currently a empty package.
 
 Package: radxa-system-config-qcs6490
 Architecture: all
