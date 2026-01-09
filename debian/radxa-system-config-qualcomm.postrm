@@ -3,7 +3,10 @@ set -e
 
 case $1 in
     configure)
-        conflicts="/usr/share/xsessions/plasma.desktop"
+        conflicts="
+            /usr/share/xsessions/plasma.desktop
+            /usr/share/drirc.d/00-mesa-defaults.conf
+            "
         for i in $conflicts
         do
             dpkg-divert --package radxa-system-config-qualcomm --rename --remove "$i"
