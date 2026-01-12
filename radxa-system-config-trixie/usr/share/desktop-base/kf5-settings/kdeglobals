@@ -1,0 +1,22 @@
+[General]
+XftAntialias=true
+XftHintStyle=hintslight
+XftSubPixel=rgb
+BrowserApplication=firefox-esr.desktop
+
+[KDE]
+LookAndFeelPackage=org.debian.desktop
+
+# HOW: https://develop.kde.org/docs/administration/kiosk/keys/
+# WHY: https://bugzilla.redhat.com/show_bug.cgi?id=1929643
+# FROM: https://unix.stackexchange.com/a/653947
+[KDE Action Restrictions][$i]
+# Switch User is broken when using GDM:
+# https://bugs.kde.org/show_bug.cgi?format=multiple&id=502127
+action/switch_user=false
+# KDE Wayland does not support sessions
+# Exact order is needed for action/switch_user to work
+action/start_new_session=false
+
+[KDE Control Module Restrictions][$i]
+kcm_sddm=false

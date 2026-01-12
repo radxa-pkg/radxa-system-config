@@ -158,7 +158,6 @@ Depends: radxa-system-config-common,
 Recommends: radxa-desktop-branding,
 Description: Common system config files
  This package provides Debian trixie system config files.
- This is currently an empty package.
 
 Package: radxa-system-config-focal
 Architecture: all
