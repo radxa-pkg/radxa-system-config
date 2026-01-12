@@ -153,6 +153,7 @@ Conflicts: radxa-system-config,
 Provides: radxa-system-config
 Depends: radxa-system-config-common,
          radxa-system-config-gdm3-disable-sleep,
+         linux-sysctl-defaults,
          ${misc:Depends},
 Recommends: radxa-desktop-branding,
 Description: Common system config files
