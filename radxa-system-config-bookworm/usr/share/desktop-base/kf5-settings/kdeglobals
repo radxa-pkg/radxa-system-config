@@ -11,6 +11,7 @@ SingleClick=false
 
 # Fix User Avatar in System Settings
 # The point is to avoid software backend
+# https://bugs.kde.org/show_bug.cgi?id=470421
 # https://doc.qt.io/qt-5/qtquick-visualcanvas-adaptations.html
 [QtQuickRendererSettings]
 SceneGraphBackend=rhi
