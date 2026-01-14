@@ -5,7 +5,7 @@ XftSubPixel=rgb
 BrowserApplication=firefox-esr.desktop
 
 [KDE]
-LookAndFeelPackage=org.debian.desktop
+LookAndFeelPackage=com.radxa.desktop
 
 # HOW: https://develop.kde.org/docs/administration/kiosk/keys/
 # WHY: https://bugzilla.redhat.com/show_bug.cgi?id=1929643
