@@ -2,11 +2,10 @@
 set -e
 
 case $1 in
-    configure)
-        if [ ! -e /var/lib/sddm/state.conf ]
-        then
-            mkdir -p /var/lib/sddm/
-            cat << EOF > /var/lib/sddm/state.conf
+configure)
+	if [ ! -e /var/lib/sddm/state.conf ]; then
+		mkdir -p /var/lib/sddm/
+		cat <<EOF >/var/lib/sddm/state.conf
 [Last]
 # Name of the last logged-in user.
 # This user will be preselected when the login screen appears
@@ -17,11 +16,18 @@ case $1 in
 Session=/usr/share/wayland-sessions/plasmawayland.desktop
 EOF
 
-        dpkg-trigger update-initramfs
-        fi
-        ;;
+		if [ ! -e /etc/security ]; then
+			mkdir -p /etc/security
+		fi
+		if [ -e /etc/security/pam_env.conf ] && ! grep -e 'QT_QUICK_BACKEND' /etc/security/pam_env.conf >/dev/null 2>/dev/null; then
+			echo 'QT_QUICK_BACKEND DEFAULT=software' >>/etc/security/pam_env.conf
+		fi
+
+		dpkg-trigger update-initramfs
+	fi
+	;;
 esac
-    
+
 #DEBHELPER#
 
 exit 0

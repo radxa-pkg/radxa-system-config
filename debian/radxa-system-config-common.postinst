@@ -2,35 +2,31 @@
 set -e
 
 case $1 in
-    configure|triggered)
-        if [ ! -e /etc/default ]
-        then
-            mkdir -p /etc/default
-        fi
-        if ( . /etc/default/zramswap 2>/dev/null && [ -z "$ALGO" ] )
-        then
-            echo "ALGO=zstd" >> /etc/default/zramswap
-        fi
-        if ( . /etc/default/zramswap 2>/dev/null && [ -z "$PERCENT" ] )
-        then
-            echo "PERCENT=50" >> /etc/default/zramswap
-        fi
+configure | triggered)
+	if [ ! -e /etc/default ]; then
+		mkdir -p /etc/default
+	fi
+	# shellcheck source=/dev/null
+	if (. /etc/default/zramswap 2>/dev/null && [ -z "$ALGO" ]); then
+		echo "ALGO=zstd" >>/etc/default/zramswap
+	fi
+	# shellcheck source=/dev/null
+	if (. /etc/default/zramswap 2>/dev/null && [ -z "$PERCENT" ]); then
+		echo "PERCENT=50" >>/etc/default/zramswap
+	fi
 
-        if [ ! -e /etc/plymouth ]
-        then
-            mkdir -p /etc/plymouth
-        fi
-        if [ -e /etc/plymouth/plymouthd.conf ] && ! grep -v -e '#' -e '^$' /etc/plymouth/plymouthd.conf >/dev/null 2>/dev/null
-        then
-            cat << EOF >> /etc/plymouth/plymouthd.conf
+	if [ ! -e /etc/plymouth ]; then
+		mkdir -p /etc/plymouth
+	fi
+	if [ -e /etc/plymouth/plymouthd.conf ] && ! grep -v -e '#' -e '^$' /etc/plymouth/plymouthd.conf >/dev/null 2>/dev/null; then
+		cat <<EOF >>/etc/plymouth/plymouthd.conf
 [Daemon]
 Theme=spinner
 EOF
-        fi
+	fi
 
-        if [ -e /etc/modules ] && ! grep -v -e '#' -e '^$' /etc/modules >/dev/null 2>/dev/null
-        then
-            cat << EOF >> /etc/modules
+	if [ -e /etc/modules ] && ! grep -v -e '#' -e '^$' /etc/modules >/dev/null 2>/dev/null; then
+		cat <<EOF >>/etc/modules
 ### START OF RADXA-SYSTEM-CONFIG-COMMON SECTION
 
 # LED triggers are not automatically loaded according to device tree
@@ -49,21 +45,12 @@ rockchip-cpufreq
 
 ### END OF RADXA-SYSTEM-CONFIG-COMMON SECTION
 EOF
-        fi
+	fi
 
-        if [ ! -e /etc/security ]
-        then
-            mkdir -p /etc/security
-        fi
-        if [ -e /etc/security/pam_env.conf ] && ! grep -e 'QT_QUICK_BACKEND' /etc/security/pam_env.conf >/dev/null 2>/dev/null
-        then
-            echo 'QT_QUICK_BACKEND DEFAULT=software' >> /etc/security/pam_env.conf
-        fi
-
-        dpkg-trigger update-initramfs
-        ;;
+	dpkg-trigger update-initramfs
+	;;
 esac
-    
+
 #DEBHELPER#
 
 exit 0
