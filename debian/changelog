@@ -1,3 +1,18 @@
+radxa-system-config (0.6.30) noble; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * fix: allow normal users to use ping
+  * docs: add KDE bug link
+  * feat: add Debian 13 KDE settings
+  * fix: only specify QT_QUICK_BACKEND with Plasma 5
+  * fix: use Radxa theme
+
+  [ Chongbiao Chen ]
+  * remove: rm force-gl-vendor.conf
+  * feat: add 99-force-gl-vendor.conf
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 20 Jan 2026 02:54:53 +0000
+
 radxa-system-config (0.6.29) noble; urgency=medium
 
   [ Jiali Chen ]
