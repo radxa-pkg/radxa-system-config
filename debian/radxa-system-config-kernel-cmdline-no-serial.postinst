@@ -3,7 +3,11 @@ set -e
 
 case $1 in
     configure)
-        u-boot-update
+        if [ ! -f /etc/kernel/cmdline ]
+        then
+            install -m 644 /usr/share/radxa-system-config/cmdline /etc/kernel/cmdline
+            u-boot-update
+        fi
         ;;
 esac
     
