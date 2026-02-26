@@ -1,7 +1,7 @@
 main_build: build-kernel-cmdline
 clean: clean-kernel-cmdline
 
-SRC-KCMD	:=	radxa-system-config-kernel-cmdline/etc/kernel
+SRC-KCMD	:=	radxa-system-config-kernel-cmdline/usr/share/radxa-system-config
 KCMD		:=	$(SRC-KCMD)/cmdline.ttyFIQ0 $(SRC-KCMD)/cmdline.ttyFIQ0.115200 \
 				$(SRC-KCMD)/cmdline.ttyS0 $(SRC-KCMD)/cmdline.ttyS2 \
 				$(SRC-KCMD)/cmdline.ttyAMA0 $(SRC-KCMD)/cmdline.ttyAMA2 \

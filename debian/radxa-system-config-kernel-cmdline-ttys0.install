@@ -1,2 +1,2 @@
 #!/usr/bin/dh-exec 
-radxa-system-config-kernel-cmdline/etc/kernel/cmdline.ttyS0 => /etc/kernel/cmdline
+radxa-system-config-kernel-cmdline/usr/share/radxa-system-config/cmdline.ttyS0 => /usr/share/radxa-system-config/cmdline

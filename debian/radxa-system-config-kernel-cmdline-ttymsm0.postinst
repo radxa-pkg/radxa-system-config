@@ -1,12 +1,1 @@
-#!/bin/sh
-set -e
-
-case $1 in
-    configure)
-        u-boot-update
-        ;;
-esac
-    
-#DEBHELPER#
-
-exit 0
+radxa-system-config-kernel-cmdline-no-serial.postinst
