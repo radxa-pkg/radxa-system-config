@@ -9,10 +9,12 @@ case $1 in
         /usr/share/applications/mimeapps.list
         /usr/lib/modprobe.d/panfrost.conf
         /usr/share/gdm/gdm.schemas
+        /usr/share/wayland-sessions/plasmawayland.desktop
         "
-        for i in $conflicts
-        do
-            dpkg-divert --package radxa-system-config-rockchip --rename --remove "$i"
+        for i in $conflicts; do
+            if [ "$(dpkg-divert --listpackage "$i")" = "radxa-system-config-rockchip" ]; then
+                dpkg-divert --package radxa-system-config-rockchip --rename --remove "$i"
+            fi
         done
         ;;
 esac

@@ -3,12 +3,18 @@ set -e
 
 case $1 in
     configure|triggered)
-        # Clean up dpkg-divert for version << 0.6.14
-        conflicts="/usr/share/wayland-sessions/plasmawayland.desktop"
-        if [ "$(dpkg-divert --listpackage "$conflicts")" = "radxa-system-config-rockchip" ]
-        then
-            dpkg-divert --package radxa-system-config-rockchip --rename --remove "$conflicts"
-        fi
+        # Clean up dpkg-divert for version << 0.6.14 / 0.6.31
+        conflicts="
+        /usr/share/wayland-sessions/plasmawayland.desktop
+        /usr/lib/modprobe.d/panfrost.conf
+        "
+
+        for i in $conflicts; do
+            if [ "$(dpkg-divert --listpackage "$i")" = "radxa-system-config-rockchip" ]
+            then
+                dpkg-divert --package radxa-system-config-rockchip --rename --remove "$i"
+            fi
+        done
 
         if [ -e /usr/share/desktop-base/kf5-settings/kdeglobals ]
         then
