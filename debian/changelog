@@ -1,3 +1,13 @@
+radxa-system-config (0.6.31) noble; urgency=medium
+
+  [ Chongbiao Chen ]
+  * chore: move kernel cmdline to /usr
+
+  [ ZHANG Yuntian ]
+  * fix: remove Rockchip specific panfrost override
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 05 Mar 2026 11:44:46 +0000
+
 radxa-system-config (0.6.30) noble; urgency=medium
 
   [ ZHANG Yuntian ]
