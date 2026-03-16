@@ -36,7 +36,7 @@ $(SRC-KCMD)/cmdline.ttyAMA2: $(SRC-KCMD)/cmdline
 	echo "console=ttyAMA2,115200n8 acpi=force $(shell cat $(SRC-KCMD)/cmdline)" > "$@"
 
 $(SRC-KCMD)/cmdline.ttyAS0: $(SRC-KCMD)/cmdline
-	echo "console=ttyAS0,115200n8 rootwait clk_ignore_unused mac_addr=\$${mac} mac1_addr=\$${mac1} $(shell cat $(SRC-KCMD)/cmdline)" > "$@"
+	echo "console=ttyAS0,115200n8 earlyprintk=sunxi-uart,0x2500000 rootwait clk_ignore_unused mac_addr=\$${mac} mac1_addr=\$${mac1} $(shell cat $(SRC-KCMD)/cmdline)" > "$@"
 
 .PHONY: clean-kernel-cmdline
 clean-kernel-cmdline:
