@@ -1,3 +1,13 @@
+radxa-system-config (0.6.32) noble; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * fix: remove bcmdhd config
+
+  [ Jiali Chen ]
+  * fix: add earlyprintk to cmdline.ttyAS0
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 19 Mar 2026 11:25:25 +0000
+
 radxa-system-config (0.6.31) noble; urgency=medium
 
   [ Chongbiao Chen ]
