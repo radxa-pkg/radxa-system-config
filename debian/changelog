@@ -1,3 +1,10 @@
+radxa-system-config (0.7.0) UNRELEASED; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * feat: support resolute
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Sat, 09 May 2026 10:20:15 +0000
+
 radxa-system-config (0.6.32) noble; urgency=medium
 
   [ ZHANG Yuntian ]

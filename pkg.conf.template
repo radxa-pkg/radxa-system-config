@@ -41,6 +41,12 @@
       "noble-test"
     ]
   },
+  "radxa-system-config-resolute_VERSION_all.deb": {
+    "Releases": [
+      "resolute",
+      "resolute-test"
+    ]
+  },
   "*": {
     "Releases": [
       "buster",
@@ -58,7 +64,9 @@
       "jammy",
       "jammy-test",
       "noble",
-      "noble-test"
+      "noble-test",
+      "resolute",
+      "resolute-test"
     ]
   }
 }

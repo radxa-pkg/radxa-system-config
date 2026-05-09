@@ -195,6 +195,19 @@ Provides: radxa-system-config
 Description: Common system config files
  This package provides Ubuntu Noble system config files.
 
+Package: radxa-system-config-resolute
+Architecture: all
+Priority: optional
+Depends: radxa-system-config-common,
+         ${misc:Depends},
+Recommends: radxa-desktop-branding (>= 0.1.3),
+Replaces: radxa-system-config,
+Conflicts: radxa-system-config,
+Provides: radxa-system-config
+Description: Common system config files
+ This package provides Ubuntu Resolute system config files.
+ This is currently an empty package.
+
 Package: radxa-system-config-kernel-cmdline-no-serial
 Architecture: all
 Priority: optional
