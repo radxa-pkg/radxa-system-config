@@ -363,3 +363,10 @@ Priority: optional
 Depends: ${misc:Depends},
 Description: GDM3 config to disable sleep mode
  This package provides GDM3 config to disable sleep mode.
+
+Package: radxa-system-config-rtc-is-ds1371
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends},
+Description: Override default RTC device to DS1371
+ This package provides config file to override the default RTC device to DS1371.

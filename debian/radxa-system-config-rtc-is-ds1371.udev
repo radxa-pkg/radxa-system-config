@@ -1,0 +1,1 @@
+KERNEL=="rtc*", SUBSYSTEM=="rtc", ATTR{name}=="rtc-ds1307 *-0068", SYMLINK="rtc"
