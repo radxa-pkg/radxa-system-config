@@ -95,6 +95,14 @@ Description: Qualcomm system config files
  This package provides system config files for Qualcomm QCS6490 devices.
  This is currently an empty package.
 
+Package: radxa-system-config-sc8280
+Architecture: all
+Priority: optional
+Depends: radxa-system-config-qualcomm,
+         ${misc:Depends},
+Description: Qualcomm SC8280XP system config files
+ This package provides system config files for Qualcomm SC8280XP devices.
+
 Package: radxa-system-config-common
 Architecture: all
 Priority: optional
