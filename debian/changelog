@@ -1,3 +1,10 @@
+radxa-system-config (0.7.1) noble; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * feat: add radxa-system-config-rtc-is-ds1371
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 21 May 2026 11:57:05 +0000
+
 radxa-system-config (0.7.0) noble; urgency=medium
 
   [ ZHANG Yuntian ]
