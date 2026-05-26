@@ -1,0 +1,2 @@
+# We need to start service on shutdown
+radxa-system-config-unload-tc956x: systemd-service-file-refers-to-unusual-wantedby-target

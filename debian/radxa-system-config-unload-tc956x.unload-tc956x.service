@@ -1,0 +1,11 @@
+[Unit]
+Description=Unload problematic tc956x drivers
+DefaultDependencies=no
+Before=halt.target shutdown.target reboot.target
+
+[Service]
+ExecStart=/usr/bin/sh -c "/usr/sbin/rmmod dwmac_tc956x; /usr/sbin/rmmod tc956x_pci"
+RemainAfterExit=yes
+
+[Install]
+WantedBy=halt.target shutdown.target reboot.target

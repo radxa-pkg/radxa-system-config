@@ -370,3 +370,10 @@ Priority: optional
 Depends: ${misc:Depends},
 Description: Override default RTC device to DS1371
  This package provides config file to override the default RTC device to DS1371.
+
+Package: radxa-system-config-unload-tc956x
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends},
+Description: Unload tc956x driver before shutdown
+ This package provides config file to unload tc956x driver before shutdown.
