@@ -1,3 +1,13 @@
+radxa-system-config (0.7.2) noble; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * feat: add radxa-system-config-unload-tc956x
+
+  [ Chongbiao Chen ]
+  * fix: add plymouth.enable=0 to ttyMSM0 cmdline
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 05 Jun 2026 08:38:44 +0000
+
 radxa-system-config (0.7.1) noble; urgency=medium
 
   [ ZHANG Yuntian ]
