@@ -1,3 +1,10 @@
+radxa-system-config (0.7.3) noble; urgency=medium
+
+  [ Feng Zhang ]
+  * fix: prevent AC101/AC101B capture source from suspending
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 12 Jun 2026 06:32:17 +0000
+
 radxa-system-config (0.7.2) noble; urgency=medium
 
   [ ZHANG Yuntian ]
