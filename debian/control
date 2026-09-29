@@ -159,6 +159,17 @@ Recommends: radxa-desktop-branding,
 Description: Common system config files
  This package provides Debian trixie system config files.
 
+Package: radxa-system-config-tigervnc-kde
+Architecture: all
+Priority: optional
+Depends: dbus-daemon,
+         plasma-workspace,
+         tigervnc-standalone-server,
+         ${misc:Depends},
+Description: TigerVNC configuration for KDE Plasma
+ This package configures TigerVNC to start KDE Plasma in an isolated X11
+ session.
+
 Package: radxa-system-config-focal
 Architecture: all
 Priority: optional
