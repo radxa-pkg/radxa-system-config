@@ -1,0 +1,9 @@
+# This file is sourced by /etc/X11/Xsession after 75dbus_dbus-launch.
+
+if [ -n "${VNCDESKTOP:-}" ]; then
+  case "${STARTUP:-}" in
+    "dbus-launch "*|"/usr/bin/dbus-launch "*|\
+      "dbus-run-session "*|"/usr/bin/dbus-run-session "*) ;;
+    *) STARTUP="dbus-run-session -- $STARTUP" ;;
+  esac
+fi

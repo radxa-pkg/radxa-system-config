@@ -1,0 +1,16 @@
+# This file is sourced by /etc/X11/Xsession.
+# Do not let a VNC desktop reuse the physical Wayland session bus.
+
+if [ -n "${VNCDESKTOP:-}" ]; then
+  unset SESSION_MANAGER
+  unset DBUS_SESSION_BUS_ADDRESS
+  unset WAYLAND_DISPLAY
+  export XDG_SESSION_TYPE=x11
+
+  # Respect a session explicitly selected with tigervncserver -session.
+  if [ -z "${STARTUP:-}" ]; then
+    export DESKTOP_SESSION=plasma
+    export XDG_CURRENT_DESKTOP=KDE
+    STARTUP=startplasma-x11
+  fi
+fi
