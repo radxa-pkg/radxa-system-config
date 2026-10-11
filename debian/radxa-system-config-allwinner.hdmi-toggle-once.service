@@ -1,6 +1,7 @@
 [Unit]
 Description=HDMI toggle (1280x1024 -> 1920x1080) once after boot
 After=display-manager.service
+ConditionPathExists=/etc/systemd/system/display-manager.service
 
 [Service]
 Type=oneshot
