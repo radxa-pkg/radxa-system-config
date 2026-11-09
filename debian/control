@@ -159,6 +159,20 @@ Recommends: radxa-desktop-branding,
 Description: Common system config files
  This package provides Debian trixie system config files.
 
+Package: radxa-system-config-rockchip-kwin-gles
+Architecture: all
+Section: x11
+Priority: optional
+Replaces: radxa-system-config-rock4d-kwin-gles,
+Conflicts: radxa-system-config-rock4d-kwin-gles,
+Depends: kwin-wayland,
+         systemd,
+         ${misc:Depends},
+Description: OpenGL ES configuration for KWin Wayland on Rockchip
+ This package selects OpenGL ES compositing for KWin Wayland user
+ sessions on Rockchip devices. The setting takes effect on the next
+ session start.
+
 Package: radxa-system-config-tigervnc-kde
 Architecture: all
 Priority: optional
