@@ -3,10 +3,11 @@ set -e
 
 case $1 in
     configure|triggered)
-        # Clean up dpkg-divert for version << 0.6.14 / 0.6.31
+        # Restore files diverted by older releases after dpkg has removed our copies.
         conflicts="
         /usr/share/wayland-sessions/plasmawayland.desktop
         /usr/lib/modprobe.d/panfrost.conf
+        /usr/share/gdm/gdm.schemas
         "
 
         for i in $conflicts; do

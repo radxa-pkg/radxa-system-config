@@ -1,0 +1,23 @@
+#!/bin/sh
+set -e
+
+. /etc/os-release
+[ "${ID:-}" = debian ] || exit 0
+[ "${VERSION_ID:-}" -lt 13 ] 2>/dev/null || exit 0
+
+# Preserve an explicit administrator setting in the daemon group.
+if [ -r /etc/gdm3/daemon.conf ] && awk '
+    /^[[:space:]]*\[/ { daemon = /^[[:space:]]*\[daemon\][[:space:]]*$/ }
+    daemon && /^[[:space:]]*WaylandEnable[[:space:]]*=/ { found = 1 }
+    END { exit !found }
+' /etc/gdm3/daemon.conf; then
+	exit 0
+fi
+
+if [ -x /usr/libexec/gdm-runtime-config ]; then
+	exec /usr/libexec/gdm-runtime-config set daemon WaylandEnable false
+elif [ -x /usr/libexec/gdm-disable-wayland ]; then
+	exec /usr/libexec/gdm-disable-wayland
+elif [ -x /usr/lib/gdm3/gdm-disable-wayland ]; then
+	exec /usr/lib/gdm3/gdm-disable-wayland
+fi

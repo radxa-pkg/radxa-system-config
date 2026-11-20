@@ -5,7 +5,6 @@ case $1 in
 install | upgrade)
 	conflicts="
         /usr/share/applications/mimeapps.list
-        /usr/share/gdm/gdm.schemas
         "
 	for i in $conflicts; do
 		dpkg-divert --package radxa-system-config-rockchip --divert "$i.bak" --rename "$i"
