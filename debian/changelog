@@ -1,3 +1,16 @@
+radxa-system-config (0.7.5) UNRELEASED; urgency=medium
+
+  [ Wang Yongsen ]
+  * Fix black screen in TigerVNC Plasma sessions
+
+  [ ZHANG Yuntian ]
+  * fix: disable Wayland up to Debian 12
+  * chore: remove legacy distros
+  * fix: force KWin to use OpenGL ES
+  * chore: fix changelog typos
+
+ -- Radxa Computer (Shenzhen) Co., Ltd. <dev@radxa.com>  Fri, 20 Nov 2026 03:01:25 +0000
+
 radxa-system-config (0.7.4) noble; urgency=medium
 
   [ ZHANG Yuntian ]
@@ -274,7 +287,7 @@ radxa-system-config (0.6.12) jammy; urgency=medium
   * fix: remove generated file
   * feat: add radxa-system-config-kernel-cmdline-ttyama2
   * fix: only override U_BOOT_PARAMETERS when needed
-  * refactor: use envrionment.d for global variables
+  * refactor: use environment.d for global variables
 
  -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 09 Jan 2025 10:54:41 +0000
 
@@ -377,7 +390,7 @@ radxa-system-config (0.6.1) jammy; urgency=medium
   * Bump softprops/action-gh-release from 1 to 2
 
   [ ZHANG Yuntian ]
-  * doc: update comments fomr Bookworm configuration files
+  * doc: update comments from Bookworm configuration files
   * fix: move amlogic specific hack to its own package
   * chore: update KDE Bookworm configs
   * feat: set default browser to Chromium for Rockchip devices
