@@ -1,4 +1,4 @@
-radxa-system-config (0.7.5) UNRELEASED; urgency=medium
+radxa-system-config (0.7.5) noble; urgency=medium
 
   [ Wang Yongsen ]
   * Fix black screen in TigerVNC Plasma sessions
@@ -9,7 +9,7 @@ radxa-system-config (0.7.5) UNRELEASED; urgency=medium
   * fix: force KWin to use OpenGL ES
   * chore: fix changelog typos
 
- -- Radxa Computer (Shenzhen) Co., Ltd. <dev@radxa.com>  Fri, 20 Nov 2026 03:01:25 +0000
+ -- "Radxa Computer (Shenzhen) Co., Ltd." <dev@radxa.com>  Fri, 20 Nov 2026 03:07:14 +0000
 
 radxa-system-config (0.7.4) noble; urgency=medium
 
